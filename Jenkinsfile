@@ -6,7 +6,7 @@
         }
         stage('Build') {
             
-            withEnv(["MVN_HOME="$mvnHome]){
+            withEnv(["MVN_HOME=$mvnHome"]){
                 if(isUnix()){
                 sh '"$MVN_HOME/bin/mvn" -Dmaven.test.failure.ignore=true clean package'
                 }
