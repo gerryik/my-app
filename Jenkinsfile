@@ -1,4 +1,4 @@
-    node {
+    node('maven-label') {
         def mvnHome
         stage('Preparation'){
             git 'https://github.com/gerryik/my-app.git'
